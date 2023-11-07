@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid green; */
+}
+
+:root {
+  --color-bg: #161616;
+  --color-text: #d0d0d0;
+
+  --color-gray: rgb(97, 97, 97);
+  --color-orange: #fda638;
+  --color-bullet: #41301c;
+
+  --font-family: "Comfortaa", sans-serif;
+}
+
+body {
+  background: var(--color-bg);
+  height: 100vh;
+  overflow: hidden;
+}
+
+.section__padding {
+  padding: 2rem 4rem;
+}
+
+.goldrush__navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem;
+}
+
+.goldrush__navbar i {
+  color: var(--color-orange);
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.goldrush__navbar-links {
+  display: flex;
+  list-style: none;
+  gap: 2.7rem;
+}
+
+.goldrush__navbar-links a {
+  text-decoration: none;
+  color: var(--color-text);
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 1.2rem;
+  transition: 0.4s;
+}
+
+.goldrush__navbar-links a:hover {
+  color: var(--color-orange);
+}
+
+.goldrush__navbar button {
+  padding: 0.7rem 3rem;
+  background: transparent;
+  border: 1px solid var(--color-gray);
+  color: var(--color-text);
+  font-family: var(--font-family);
+  font-size: 1.1rem;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+.goldrush__navbar button:hover {
+  background: var(--color-orange);
+  color: var(--color-bg);
+}
+
+.goldrush__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+}
+.goldrush__container-left,
+.goldrush__container-right {
+  width: 50%;
+}
+.goldrush__container-left h1 {
+  color: var(--color-text);
+  font-family: var(--font-family);
+  font-weight: 900;
+  font-size: 4rem;
+  width: 70%;
+  margin-bottom: 2rem;
+}
+
+.goldrush__container-left p {
+  font-family: var(--font-family);
+  color: var(--color-text);
+  font-size: 1.2rem;
+  width: 70%;
+}
+
+.goldrush__container-left_explore,
+.goldrush__container-left_create {
+  margin-top: 2rem;
+  padding: 0.5rem 2.4rem;
+  border: none;
+  font-family: var(--font-family);
+  font-size: 1.1rem;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.goldrush__container-left_explore {
+  background: var(--color-orange);
+}
+
+.goldrush__container-left_create {
+  background: none;
+  color: var(--color-text);
+  border: 1px solid var(--color-gray);
+  margin-left: 1rem;
+}
+
+.goldrush__container-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.goldrush__container-right img {
+  height: 100%;
+  width: auto;
+}
+
+.goldrush__container-left__infos {
+  display: flex;
+  margin-top: 2.5rem;
+  width: 70%;
+  justify-content: space-between;
+}
+
+.goldrush__container-left__infos p {
+  font-family: var(--font-family);
+  font-weight: 700;
+  color: var(--color-orange);
+}
+
+.goldrush__container-left__infos h2 {
+  font-family: var(--font-family);
+  color: var(--color-text);
+  margin-top: 0.2rem;
+}
